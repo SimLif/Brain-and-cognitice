@@ -1,24 +1,15 @@
-% eeglab's EEG structure and indexing
-% mikeXcohen@gmail.com
-
 %% load in EEG data
 
-load S2.mat
-
-info
-
-% FYI, this would also work:
-% [file2load,path4file]=uigetfile('*.mat','Please select EEG data file');
-% load([ path4file file2load ])
+load sampleEEGdata.mat
 
 % take a minute to inspect the EEG structure
-%EEG
+EEG
 
 %% finding time indices based on ms
 
 % The problem: We want to create a topographical plot at time=300 ms
 
-time2plot = 400; % in ms!
+time2plot = 200; % in ms!
 
 % extract the trial-averaged data from requested time point
 % (note: this code contains an error!)

@@ -1,4 +1,4 @@
-function this = eegobj(EEG);
+function this = eegobj(EEG)
 
     if nargin == 1
         if isa(EEG, 'eegobj')
